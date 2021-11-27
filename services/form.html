@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ New Magzine</title>
+    <style>
+
+
+    input[type='radio']:checked:after {
+        width: 8px;
+        height: 8px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        background-color: #04ff00;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid rgba(49, 49, 49, 0.395);
+    }
+    </style>
+</head>
+<body>
+    <div class="box" style="margin: 10px; padding: 10px; border: solid black 3px">
+        <h1>Subscribe to XYZ News Magzine and Emails</h1>
+        <hr color="black" width="100%" size="1px" >
+        <p>Interested in receiving daily small updates of all latest News? Well, now you can. And best of all, it is free! Just fill out this form and submit it by clicking the "send it In" button. We will put you on our mailing list and you will receive your first email in 3-5 days.</p>
+        <hr color="black" width="100%">
+        <br>
+        Please fill the following boxes to help us send the emails and our news letter:
+        <form>
+            <label>First Name:</label><input type="text" name="first-name" size="20" >
+            <br>
+            <label>Last Name:</label><input type="text" name="last-name" size="20" >
+            <br>
+            <label>Business:</label><input type="text" name="business-name" size="20">
+            <p>We must have corrent e-mail to send you the news letter:</p>
+            <label>Email:</label><input type="email" name="email" size="30">
+            <br>
+            <label>How did you hear about XYZ News Magazines and Emails?</label>
+            <br>
+            <input type="radio" id="Here on web" name="seo" value="web">
+            <label for="web">Here on the web</label>
+            <input type="radio" id="In a magzine" name="seo" value="magzine">
+            <label for="web">In a magzine</label>
+            <input type="radio" id="Television" name="seo" value="television">
+            <label for="web">Television</label>
+            <input type="radio" id="other" name="seo" value="other">
+            <label for="web">Other</label>
+            <br>
+            <label>Would you like to be in our regular mailing list?</label>
+            <br>
+            <input type="checkbox" name="regular" value="yes">
+            <label for="yes">Yes, we love junk emails</label>
+            <hr color="black" width="100%" >
+            <input type="reset" value="Reset">
+            <input type="submit" value="Send it in!">
+        </form>
+    </div>
+</body>
+</html>
